@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feliz Cumple Lía!</title>
+    <meta name="description" content="Happy Birthday"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="Resources/loading.css"/>
+    <link rel="stylesheet" href="Resources/stylesheet.css"/>
+    <link rel="stylesheet" href="Resources/message.css"/>    
+    
+    <link rel="stylesheet" href="Resources/Slider/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="Resources/Slider/css/style.css"> <!-- Resource style -->
+    <!-- JS -->
+    <script src="Resources/Slider/js/jquery-2.1.4.js"></script> 
+    
+
+    <!--<script type="text/javascript" src='lib/jquery-3.1.1.min.js'></script>-->
+    <script type="text/javascript" src='lib/bootstrap/js/bootstrap.js'></script>
+    <script type="text/javascript" src='Resources/logic.js'></script>
+    
+    <script src="Resources/Slider/js/modernizr.js"></script>
+    <script src="Resources/Slider/js/velocity.min.js"></script>
+    <script src="Resources/Slider/js/velocity.ui.min.js"></script>    
+    <script src="Resources/Slider/js/main.js"></script> 
+</head>
+<body data-hijacking="off" data-animation="scaleDown">
+    <div class="loading"></div>
+    
+    <audio class="song" controls loop>
+        <source src="Resources/hbd.mp3">
+            El explorador que usas no puede reproducir el sonido.
+        </audio>
+        
+        <section class="cd-section visible">
+            <div class="sectionDiv">
+                <!-- GLOBOS -->
+                <div>
+                    <div class="balloons text-center" id="b1">
+                        <h2 style="color:#F2B300;">x</h2>
+                    </div>
+                    <div class="balloons text-center" id="b2">
+                        <h2 style="color:#0719D4;">k</h2>
+                    </div>
+                    <div class="balloons text-center" id="b3">
+                        <h2 style="color:#D14D39;">l</h2>
+                    </div>
+                    <div class="balloons text-center" id="b4">
+                        <h2 style="color:#8FAD00;">p</h2>
+                    </div>
+                    <div class="balloons text-center" id="b5">
+                        <h2 style="color:#8377E4;">j</h2>
+                    </div>
+                    <div class="balloons text-center" id="b6">
+                        <h2 style="color:#99C96A;">r</h2>
+                    </div>
+                    <div class="balloons text-center" id="b7">
+                        <h2 style="color:#20CFB4;">t</h2>
+                    </div>
+                    <div class="balloons text-center" id="b11">
+                        <h2 style="color:#F2B300;">x</h2>
+                    </div>
+                    <div class="balloons text-center" id="b12">
+                        <h2 style="color:#0719D4;">k</h2>
+                    </div>
+                    <div class="balloons text-center" id="b13">
+                        <h2 style="color:#D14D39;">l</h2>
+                    </div>
+                    <div class="balloons text-center" id="b14">
+                        <h2 style="color:#8FAD00;">p</h2>
+                    </div>
+                    <div class="balloons text-center" id="b15">
+                        <h2 style="color:#8377E4;">j</h2>
+                    </div>
+                    <div class="balloons text-center" id="b16">
+                        <h2 style="color:#99C96A;">r</h2>
+                    </div>
+                    <div class="balloons text-center" id="b17">
+                        <h2 style="color:#20CFB4;">t</h2>
+                    </div>
+                </div>
+                
+                <img src="Resources/Imagenes/Balloon-Border.png" width="100%" class="balloon-border">
+                <!-- FIN GLOBOS -->
+                
+                <div class="container">
+                    <!-- LUCES -->
+                    <div class="row">
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_yellow"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_red"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_blue"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_green"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_pink"></div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 bulb-holder">
+                            <div class="bulb" id="bulb_orange"></div>
+                        </div>
+                    </div>
+                    <!-- FIN LUCES -->
+                    
+                    <!-- MENSAJE TITLE-->
+                    <div class="messageTitle" style="display: none;">
+                        <svg viewBox="0 0 1500 116">
+                            <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+                                <text id="msg" stroke="#fff" fill="#645F5A" font-weight="normal" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
+                                    <tspan x="3" y="109"><!--
+                                    --><tspan>F</tspan><!--
+                                    --><tspan>e</tspan><!--
+                                    --><tspan>l</tspan><!--
+                                    --><tspan>i</tspan><!--
+                                    --><tspan>z</tspan><!--
+                                    --><tspan> </tspan><!--
+                                    --><tspan>C</tspan><!--
+                                    --><tspan>u</tspan><!--
+                                    --><tspan>m</tspan><!--
+                                    --><tspan>p</tspan><!--
+                                    --><tspan>l</tspan><!--
+                                    --><tspan>e</tspan><!--
+                                    --><tspan> </tspan><!--
+                                    --><tspan>A</tspan><!--
+                                    --><tspan>m</tspan><!--
+                                    --><tspan>o</tspan><!--
+                                    --><tspan>r</tspan><!--
+                                    --><tspan>!</tspan><!--
+                                    --><tspan>!</tspan><!--
+                                    --><tspan>!</tspan><!--
+                                    --></tspan>
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- FIN MENSAJE -->
+
+
+                    <!-- MENSAJE -->
+                    <div class="row message">
+                        <div class="col-md-12">
+                            <p>Hoy es tu cumpleaños</p>
+                            <p>y espero disfrutes este regalo...</p>
+                        </div>
+                    </div>
+                    <!-- FIN MENSAJE -->
+
+                    <!-- BOTONES -->
+                    <div class="navbar navbar-fixed-bottom">
+                        <div class="row">
+                            <div class="col-md-6 text-center col-md-offset-3">
+                                <button class="btn btn-primary" id="play">Pongamos música</button>
+                                <button class="btn btn-primary" id="story">A mesage for you</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN BOTONES -->
+                </div>
+            </div>          
+        </section>
+        
+        <section class="cd-section">
+            <div>
+                <h2>Section 2</h2>
+            </div>
+        </section>
+        
+        <section class="cd-section">
+            <div>
+                <h2>Section 3</h2>
+            </div>
+        </section>
+        
+        <section class="cd-section">
+            <div>
+                <h2>Section 4</h2>
+            </div>
+        </section>
+        
+        <section class="cd-section">
+            <div>
+                <h2>Section 5</h2>
+            </div>
+        </section>
+        
+        <nav>
+            <ul class="cd-vertical-nav">
+                <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                <li><a href="#0" class="cd-next">Prev</a></li>
+            </ul>
+        </nav> <!-- .cd-vertical-nav -->
+    </body>
+    </html>

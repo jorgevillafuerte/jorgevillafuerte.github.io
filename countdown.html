@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feliz Cumple Lía!</title>
+    <meta name="description" content="Happy Birthday"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="Resources/loading.css"/>
+    <link rel="stylesheet" href="Resources/countdown/countdown.css"/>
+    <!-- JS -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>    
+    <!--<script type="text/javascript" src='lib/jquery-3.1.1.min.js'></script>-->
+    <script type="text/javascript" src='lib/bootstrap/js/bootstrap.js'></script>
+    <script type="text/javascript" src="Resources/countdown/kinetic.js"></script>         
+    <script type="text/javascript" src="Resources/countdown/jquery.final-countdown.js"></script>   
+    <!-- FONT -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">    
+</head>
+<body>
+    <div class="loading"></div>
+    
+    <div class="countdown countdown-container container">
+        <div class="clock row">
+            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-days" class="clock-canvas"></div>
+                        
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-days type-time">DAYS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            
+            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-hours" class="clock-canvas"></div>
+                        
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-hours type-time">HOURS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            
+            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-minutes" class="clock-canvas"></div>
+                        
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-minutes type-time">MINUTES</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-seconds" class="clock-canvas"></div>
+                        
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-seconds type-time">SECONDS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+        </div><!-- /.clock -->
+    </div><!-- /.countdown-wrapper -->
+    
+    
+    <script type="text/javascript">
+        $('document').ready(function(){ 
+            $(window).on('load', function(){
+                $('.loading').fadeOut('fast');
+                $('#container').fadeIn('fast');
+            });
+            
+            'use strict';
+            
+            $('.countdown').final_countdown({
+                'start': Math.floor(new Date().getTime() / 1000),
+                'end': Math.floor(new Date(2018, 10, 15).getTime() / 1000),
+                //'end' : Math.floor(new Date(new Date().setMinutes(42)) / 1000),
+                'now': Math.floor(new Date().getTime() / 1000)
+            }, function() {
+                window.location.href = './index.html';                
+            });
+        });
+    </script>   
+</body> 
+</html>
