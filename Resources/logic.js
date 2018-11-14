@@ -6,7 +6,7 @@ $('document').ready(function(){
     
     $(window).on('load', function(){
         $('.loading').fadeOut('fast');
-        if (true || new Date() > new Date(2018,10,15)){
+        if (new Date() > new Date(2018,10,15)){
             start(); 
         } else {
             window.location.href = './countdown.html';                
