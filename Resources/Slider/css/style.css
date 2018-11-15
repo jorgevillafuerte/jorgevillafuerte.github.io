@@ -90,25 +90,28 @@ Main Components
 .cd-section:nth-of-type(4) {
   background-image: url('../../Imagenes/slide-4.jpg');
 }
-.cd-section:nth-of-type(5) > div {
+.cd-section:nth-of-type(5) {
   background-image: url('../../Imagenes/slide-5.jpg');
 }
-.cd-section:nth-of-type(6) > div {
+.cd-section:nth-of-type(6) {
   background-image: url('../../Imagenes/slide-6.jpg');
 }
-.cd-section:nth-of-type(7) > div {
+.cd-section:nth-of-type(7) {
   background-image: url('../../Imagenes/slide-7.jpg');
 }
-.cd-section:nth-of-type(8) > div {
+.cd-section:nth-of-type(8) {
   background-image: url('../../Imagenes/slide-8.jpg');
 }
-.cd-section:nth-of-type(9) > div {
+.cd-section:nth-of-type(9) {
   background-image: url('../../Imagenes/slide-9.jpg');
 }
-.cd-section:nth-of-type(10) > div {
+.cd-section:nth-of-type(10) {
   background-image: url('../../Imagenes/slide-10.jpg');
 }
-.cd-section:last-of-type > div {
+.cd-section:nth-of-type(11) {
+  background-image: url('../../Imagenes/slide-11.jpg');
+}
+.cd-section:last-of-type {
   background-image: url('../../Imagenes/slide-thanks.jpg');
 }
 
@@ -242,7 +245,7 @@ Main Components
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
 .cd-vertical-nav a.cd-music {
-  display: block;
+  display: block !important;
   margin-bottom: 10px;  
   background: url(../img/cd-icon-music.svg) no-repeat center center !important;
 }
@@ -251,3 +254,16 @@ Main Components
     display: block;
   }
 }
+
+@media only screen and (max-device-width: 600px) {
+  .cd-vertical-nav {
+    display: block;
+  }
+  .cd-section {
+    background-size: contain !important;
+    background-repeat: repeat-y !important;
+  }
+  .cd-vertical-nav li :not(.cd-music) {
+    display: none;
+  }
+} 

@@ -62,6 +62,7 @@ $('document').ready(function(){
     }
     
     function moveBallons() {
+        $('.balloons').show();
         $('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
         $('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
         $('#b11,#b14,#b15,#b17').addClass('balloons-rotate-behaviour-two');
