@@ -14,9 +14,6 @@
 	<link rel="stylesheet" href="Resources/Slider/css/style.css"> <!-- Resource style -->
     <!-- JS -->
     <script src="Resources/Slider/js/jquery-2.1.4.js"></script> 
-    
-
-    <!--<script type="text/javascript" src='lib/jquery-3.1.1.min.js'></script>-->
     <script type="text/javascript" src='lib/bootstrap/js/bootstrap.js'></script>
     <script type="text/javascript" src='Resources/logic.js'></script>
     
@@ -24,6 +21,10 @@
     <script src="Resources/Slider/js/velocity.min.js"></script>
     <script src="Resources/Slider/js/velocity.ui.min.js"></script>    
     <script src="Resources/Slider/js/main.js"></script> 
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNb73hs1McV0lr9FRN8Z6i0JJ_1NSacmE&callback=initialize">
+</script>
 </head>
 <body data-hijacking="off" data-animation="scaleDown">
     <div class="loading"></div>
@@ -140,59 +141,124 @@
                         </svg>
                     </div>
                     <!-- FIN MENSAJE -->
-
-
+                    
+                    
                     <!-- MENSAJE -->
                     <div class="row message">
                         <div class="col-md-12">
                             <p>Hoy es tu cumpleaños</p>
-                            <p>y espero disfrutes este regalo...</p>
+                            <p>y espero disfrutes éste regalo...</p>
                         </div>
                     </div>
                     <!-- FIN MENSAJE -->
-
-                    <!-- BOTONES -->
-                    <div class="navbar navbar-fixed-bottom">
-                        <div class="row">
-                            <div class="col-md-6 text-center col-md-offset-3">
-                                <button class="btn btn-primary" id="play">Pongamos música</button>
-                                <button class="btn btn-primary" id="story">A mesage for you</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FIN BOTONES -->
                 </div>
             </div>          
         </section>
         
         <section class="cd-section">
-            <div>
-                <h2>Section 2</h2>
+            <div class="selectionDiv container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row messageAlways">
+                            <div class="col-md-12">
+                                <p>Desde el dia en que te conoci,</p>
+                                <p>en ese preciso lugar,</p>
+                                <p>supe que queria pasar este y todos los dias con vos</p>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MAPA -->
+                    <div class="col-md-6" style="height: 100vh">    
+                        <div id="map"></div>
+                        <div id="pano"></div>  
+                        <script>
+                            function initialize() {
+                                var temple = {lat: -31.4247273, lng: -64.1914572};
+                                
+                                var map = new google.maps.Map(
+                                document.getElementById('map'), 
+                                {
+                                    zoom: 19, 
+                                    center: temple
+                                }
+                                );
+                                var marker = new google.maps.Marker({position: temple, map: map});
+                                
+                                
+                                /*var panorama = new google.maps.StreetViewPanorama(
+                                document.getElementById('pano'), {
+                                    position: temple,
+                                    pov: {
+                                        heading: 34,
+                                        pitch: 10
+                                    }
+                                }
+                                );
+                                
+                                map.setStreetView(panorama);*/
+                            }
+                        </script>                  
+                    </div>
+                    <!-- FIN MAPA -->
+                </div>
             </div>
         </section>
         
         <section class="cd-section">
             <div>
-                <h2>Section 3</h2>
+                <div class="col-md-8 col-md-offset-2 messagePeople">
+                    <p>
+                        ...Te amo con toda mi escencia...
+                    </p>
+                </div>
             </div>
         </section>
         
         <section class="cd-section">
             <div>
-                <h2>Section 4</h2>
+                <div class="col-md-8 col-md-offset-2 messagePeople">
+                    <p>Por ser mi sosten, por tu amor, por ser incondicional, mi mano derecha en todo, por tu risa que sana el alma, por tus abrazos, por este lazo que nunca se rompe, por eso y por mucho mas GRACIAS. Feliz cumpleaños a mi mitad, te mereces cada cosa linda que el mundo te pueda dar, todo lo bueno es para vos. TE AMO INFINITAMENTE Y MAS MUCHO MAS.</p>
+                </div>
             </div>
         </section>
         
         <section class="cd-section">
             <div>
-                <h2>Section 5</h2>
+                <div class="col-md-8 col-md-offset-2 messagePeople">
+                    <p>FELIZ CUMPLEAÑOS A LA CARA DE GALLETA MAS INTELIGENTE DEL MUNDO MUNDIAL!!
+                        Cómo crecen los chicos... Jajajajajja 
+                        Ay, que decirte a vos... 
+                        Desearte lo mejor, espero que pases el mejor de lo cumpleañito, rodeada de gente que te ama y viceversa, y que espero que seas inmensamente feliz hoy y siempre. Agradecerte, por todo lo que haces por mí, por haber estado y estar hoy siempre que te necesito, vos y yo sabemos todo lo que eso implica.
+                        Sos mí mejor amiga, mí hermanita, mí colega, mí psicóloga, MI HEBRA COMPLEMENTARIA, mí compañera en todo y no podría estar más orgullosa de ser parte de tu vida, porque personas como vos no encuentro muy seguido. Me entendés como nadie, con una sola mirada, muchisimas veces sin decir nada. 
+                        No tengo más que agradecerte por absolutamente todo y esperar que nunca se acabe ésta amistad tan linda, llena de momentos de risas, de alegrías, de logros, de tristezas y corazones rotos también, pero sobre todo de amor del bueno. 
+                        Hasta acá llega toda la cursilería, por suerte no va a suceder de nuevo hasta el año que viene, por cualquier queja comunícate con el administrador de ésta página que es bastante rompebolas jajajajaja. Ah eso, no se aceptan devoluciones de ese gordo tan tierno asi que te lo quedas para siempre okey? Gracias, estamos todos agradecidos.
+                        Te amo, para mí sos la infinitud.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cd-section">
+            <div>
+                <div class="col-md-8 col-md-offset-2 messagePeople">
+                    <p>Si tuviera que ir y venir por todos los recuerdos que vos y yo tenemos juntas sabes que no me alcanza la vida para describirlos, porque sabes que merecen ser contados al pie de la letra, párrafo por párrafo. En vez de eso, te propongo que te quedes a mi lado levantando esta copa por muchos años más, para que podamos festejar los logros y por supuesto, crear más momentos inmortales a tu lado. 
+                        Sos como una hermana para mi. Siempre admiré tu incondicionalidad con la gente, sobre todo con aquellos que te hacen reír el corazón, la capacidad de enfrentar a la vida sin chaleco antibalas y permitirte sangrar las veces que sean necesarias para sanar. Sos increíble y una mujer con todas las letras Lía. No hay palabra que represente lo que sos hoy y lo que sos para mi, pero me limito a decirte lo mucho que te amo y te aprecio. Hoy, mañana y para siempre. 
+                        "Creo que todos tenemos que tener un paño frío en nuestras vidas y me alegra poder ser el tuyo" dijiste. Y no lo olvido. 
+                        Desde los días alegres y hasta toda la inmensidad de la oscuridad, cuando tu alma no pueda más y la rutina te ahogue, ahí voy a estar. 
+                        
+                        Artesana de corazón, te deseo un feliz cumpleaños y que siempre pero siempre estés rodeada de la gente que te hace bien. 
+                        Desde acá, desde mi lugar, aunque no te vea todos los días, aunque las cosas no sean como antes el vínculo sigue intacto y eso, es más importante que cualquier distancia. 
+                    </p>
+                </div>
             </div>
         </section>
         
         <nav>
             <ul class="cd-vertical-nav">
-                <li><a href="#0" class="cd-prev inactive">Next</a></li>
-                <li><a href="#0" class="cd-next">Prev</a></li>
+                <li><a href="#0" id="music" class="cd-music">Musica</a></li>
+                <li><a href="#0" class="cd-prev inactive">Siguiente</a></li>
+                <li><a href="#0" class="cd-next">Anterior</a></li>
             </ul>
         </nav> <!-- .cd-vertical-nav -->
     </body>

@@ -13,10 +13,6 @@ $('document').ready(function(){
         }
     });
     
-    $('#turn_on').click(function(){
-        turnOnMusicLights();
-    });
-    
     function turnOnMusicLights() {
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
         $('#bulb_red').addClass('bulb-glow-red-after');
@@ -37,7 +33,7 @@ $('document').ready(function(){
     
     function playMusic() {
         var audio = $('.song')[0];
-        audio.play();
+        audio.paused ? audio.play() : audio.pause();
     }
     
     function turnOnLights() {
@@ -60,11 +56,11 @@ $('document').ready(function(){
         turnOnLights();
         flyBallons();
     }
-
+    
     function showMessageTitle() {
         $('.messageTitle').fadeIn('fast', moveBallons);
     }
-
+    
     function moveBallons() {
         $('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
         $('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
@@ -85,29 +81,26 @@ $('document').ready(function(){
         loopBallon("#b16");
         loopBallon("#b17");
         turnOnMusicLights();
+        showMessage();
     }
 
-    $('#story').click(function(){
+    function showMessage(){
+        $(this).delay(800);
 		var i;
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
-			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(800);
-			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
-				
-			}
-			else{
-				msgLoop(i);
-			}			
-
-		});
+			$(".message p:nth-child("+i+")").fadeOut('slow').delay(3000).promise().done(function(){
+                i=i+1;
+                $(".message p:nth-child("+i+")").fadeIn('slow').delay(3000);
+                if(i < 2){
+                    msgLoop(i);
+                }			
+                
+            });
 			// body...
 		}
 		
 		msgLoop(0);
-		
-	});
+    }
+    
+    $('#music').click(playMusic);
 });
