@@ -99,6 +99,9 @@ Main Components
 .cd-section:nth-of-type(7) > div {
   background-image: url('../../Imagenes/slide-7.jpg');
 }
+.cd-section:nth-of-type(8) > div {
+  background-image: url('../../Imagenes/slide-8.jpg');
+}
 
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
