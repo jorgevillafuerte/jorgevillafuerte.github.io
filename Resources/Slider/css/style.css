@@ -103,6 +103,9 @@ Main Components
   background-image: url('../../Imagenes/slide-8.jpg');
 }
 .cd-section:nth-of-type(9) > div {
+  background-image: url('../../Imagenes/slide-9.jpg');
+}
+.cd-section:last-of-type > div {
   background-image: url('../../Imagenes/slide-thanks.jpg');
 }
 

@@ -177,7 +177,7 @@ Author     : jvillafuerte
 }
 
 .balloons {
-	position: fixed;
+	position: absolute;
 	bottom: -200px;
 	left: 50%;
 	opacity: 0.6;
