@@ -21,10 +21,6 @@
     <script src="Resources/Slider/js/velocity.min.js"></script>
     <script src="Resources/Slider/js/velocity.ui.min.js"></script>    
     <script src="Resources/Slider/js/main.js"></script> 
-    
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNb73hs1McV0lr9FRN8Z6i0JJ_1NSacmE&callback=initialize">
-</script>
 </head>
 <body data-hijacking="off" data-animation="scaleDown">
     <div class="loading"></div>
@@ -169,36 +165,8 @@
                     </div>
                     
                     <!-- MAPA -->
-                    <div class="col-md-6" style="height: 100vh">    
-                        <div id="map"></div>
-                        <div id="pano"></div>  
-                        <script>
-                            function initialize() {
-                                var temple = {lat: -31.4247273, lng: -64.1914572};
-                                
-                                var map = new google.maps.Map(
-                                document.getElementById('map'), 
-                                {
-                                    zoom: 19, 
-                                    center: temple
-                                }
-                                );
-                                var marker = new google.maps.Marker({position: temple, map: map});
-                                
-                                
-                                /*var panorama = new google.maps.StreetViewPanorama(
-                                document.getElementById('pano'), {
-                                    position: temple,
-                                    pov: {
-                                        heading: 34,
-                                        pitch: 10
-                                    }
-                                }
-                                );
-                                
-                                map.setStreetView(panorama);*/
-                            }
-                        </script>                  
+                    <div class="col-md-6" style="height: 100vh">   
+                        <img src="Resources/Imagenes/maps.png">                
                     </div>
                     <!-- FIN MAPA -->
                 </div>
@@ -253,15 +221,15 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="cd-section">
-                <div>
-                    <div class="col-md-8 col-md-offset-2 messagePeople">
-                        <p>Querida hija este es un dia particularmente especial no solo porque celebramos un ano mas de tu vida en nuestras vidas los 21 son simbolicamente el paso a la.edad adulta y vos nos has dado  sobradas pruebas de tu madurez y has devuelto de mas satisfacciones estamos todos orgullosos como familia de tus.logros personales y de tus elecciones ! Incluido Maxi !! 😄😄 La distancia en este dia sirve para afianzar el amor que te tenemos!!! Un abrazo de Osoooooo de tomy.pau papa y mio !!!!  Que Dios te bendiga eapecialmente en este dia.Te Amamos 😍😍
-                        </p>
-                    </div>
+            <div>
+                <div class="col-md-8 col-md-offset-2 messagePeople">
+                    <p>Querida hija este es un dia particularmente especial no solo porque celebramos un ano mas de tu vida en nuestras vidas los 21 son simbolicamente el paso a la.edad adulta y vos nos has dado  sobradas pruebas de tu madurez y has devuelto de mas satisfacciones estamos todos orgullosos como familia de tus.logros personales y de tus elecciones ! Incluido Maxi !! 😄😄 La distancia en este dia sirve para afianzar el amor que te tenemos!!! Un abrazo de Osoooooo de tomy.pau papa y mio !!!!  Que Dios te bendiga eapecialmente en este dia.Te Amamos 😍😍
+                    </p>
                 </div>
-            </section>
+            </div>
+        </section>
         
         <nav>
             <ul class="cd-vertical-nav">
