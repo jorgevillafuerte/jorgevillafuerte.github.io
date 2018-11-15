@@ -105,6 +105,9 @@ Main Components
 .cd-section:nth-of-type(9) > div {
   background-image: url('../../Imagenes/slide-9.jpg');
 }
+.cd-section:nth-of-type(10) > div {
+  background-image: url('../../Imagenes/slide-10.jpg');
+}
 .cd-section:last-of-type > div {
   background-image: url('../../Imagenes/slide-thanks.jpg');
 }
@@ -239,6 +242,7 @@ Main Components
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
 .cd-vertical-nav a.cd-music {
+  display: block;
   margin-bottom: 10px;  
   background: url(../img/cd-icon-music.svg) no-repeat center center !important;
 }
