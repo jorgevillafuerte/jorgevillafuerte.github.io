@@ -260,6 +260,7 @@ Main Components
     display: block;
   }
   .cd-section {
+    width: 100vh;    
     background-size: contain !important;
     background-repeat: repeat-y !important;
   }

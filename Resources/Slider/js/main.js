@@ -131,6 +131,8 @@ jQuery(document).ready(function($){
     }
 
     function prevSection(event) {
+		if ($(this).hasClass('clicked')) return
+		else $(this).addClass('clicked');
     	//go to previous section
     	typeof event !== 'undefined' && event.preventDefault();
     	
@@ -152,11 +154,15 @@ jQuery(document).ready(function($){
             actual = actual - 1;
         }
 
-        resetScroll();
+		resetScroll();
+		$(this).removeClass('clicked')
     }
 
     function nextSection(event) {
-    	//go to next section
+		if ($(this).hasClass('clicked')) return
+		else $(this).addClass('clicked');
+			
+		//go to next section
     	typeof event !== 'undefined' && event.preventDefault();
 
         var visibleSection = sectionsAvailable.filter('.visible'),
@@ -175,7 +181,8 @@ jQuery(document).ready(function($){
 
             actual = actual +1;
         }
-        resetScroll();
+		resetScroll();
+		$(this).removeClass('clicked')
     }
 
     function unbindScroll(section, time) {
