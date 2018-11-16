@@ -111,6 +111,9 @@ Main Components
 .cd-section:nth-of-type(11) {
   background-image: url('../../Imagenes/slide-11.jpg');
 }
+.cd-section:nth-of-type(12) {
+  background-image: url('../../Imagenes/slide-12.jpg');
+}
 .cd-section:last-of-type {
   background-image: url('../../Imagenes/slide-thanks.jpg');
 }
